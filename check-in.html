@@ -50,10 +50,12 @@
                 <div class="card-body card-body-text" >
                     <img style="float: left; padding-left: 20px; padding-right: 20px" src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Standard Room" height="200" width="250">
                     You deserve a room as unique as you are while bed type is not guaranteed and subject to availability we will do our best to meet your preference. Maximum occupancy 2 people. Includes bath robes. Yoga mat. Flat screen tv. Plush pillow with luxury linens.
-                    </br>
-                    </br>
-                    <button>Check pricing and availability</button>
-                </div>
+                </br>
+                </br>
+                <button onclick=checkPriceStandard()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveStandard()>Reserve your room</button>
+                <h4 id="check-standard-price"></h4>
+                <h4 id="reserve-standard"></h4>
+            </div>
             </div>
         </div>
         <div class="card">
@@ -70,7 +72,9 @@
                     Spacious newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two queen beds. 350 sq. Ft.
                 </br>
                 </br>
-                <button>Check pricing and availability</button>
+                <button onclick=checkPriceQueen()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveQueen()>Reserve your room</button>
+                <h4 id="check-queen-price"></h4>
+                <h4 id="reserve-queen"></h4>
                 </div>
             </div>
         </div>
@@ -88,7 +92,9 @@
                     Newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair one king bed. 280 sq. Ft.
                 </br>
                 </br>
-                <button>Check pricing and availability</button>
+                <button onclick=checkPriceKing()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveKing()>Reserve your room</button>
+                <h4 id="check-king-price"></h4>
+                <h4 id="reserve-king"></h4>
                 </div>
             </div>
         </div>
@@ -106,9 +112,9 @@
                     Newly transformed luxury 2 bedroom suite with separate living area. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two king bed pull out couch 650 sq. 
                 </br>
                 </br>  
-                
-                <button onclick=checkPrice()>Check pricing and availability</button>
-                <h4 id="check-price"></h4>
+                <button onclick=checkPriceFamily(); >Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveFamily()>Reserve your room</button>
+                <h4 id="check-family-price"></h4> 
+                <h4 id="reserve-family"></h4>
                 </div>
             </div>
         </div>

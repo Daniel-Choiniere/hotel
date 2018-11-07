@@ -49,6 +49,38 @@ var rooms = {
     }
     
     
-    function checkPrice() {
-        document.getElementById("check-price").innerHTML = "This room costs $" + rooms.family.price;
+    function checkPriceStandard() {
+        document.getElementById("check-standard-price").innerHTML = "$" + rooms.single.price
+    }
+    
+    function checkPriceQueen() {
+        document.getElementById("check-queen-price").innerHTML = "This room costs $" + rooms.double.price
+    }
+    
+    function checkPriceKing() {
+        document.getElementById("check-king-price").innerHTML = "This room costs $" + rooms.king.price
+    }
+    
+    function checkPriceFamily() {
+        document.getElementById("check-family-price").innerHTML = "This room costs $" + rooms.family.price
+    }
+    
+    function reserveStandard() {
+        rooms.single.available == false;
+        document.getElementById("reserve-standard").innerHTML = "Thank you for reserving the Standard Room!"
+    }
+    
+    function reserveQueen() {
+        rooms.double.available == false;
+        document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
+    }
+    
+    function reserveKing() {
+        rooms.king.available == false;
+        document.getElementById("reserve-king").innerHTML = "Thank you for reserving the King Deluxe Room!"
+    }
+    
+    function reserveFamily() {
+        rooms.family.available == false;
+        document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
     }
