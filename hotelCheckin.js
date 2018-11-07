@@ -37,9 +37,10 @@ var rooms = {
     function sendContact() {
         let name = document.getElementById("inputInfo").elements.item(0).value;
         let email = document.getElementById("inputInfo").elements.item(1).value;
+        let message = document.getElementById("inputInfo").elements.item(2).value;
         let nameCapital = name[0].toUpperCase() + name.slice(1);
     
-        if (nameCapital === " ") {
+        if (nameCapital.length < 2) {
             alert("Please enter a valid name.")
         }
         else {
@@ -48,22 +49,25 @@ var rooms = {
         // document.getElementById("maintitle").innerHTML = "Welcome to the Div'inn " + name + " " + email + "!";
     }
     
-    
-    function checkPriceStandard() {
-        document.getElementById("check-standard-price").innerHTML = "$" + rooms.single.price
-    }
-    
-    function checkPriceQueen() {
+    document.getElementById("standard-button").addEventListener("click", function() {
+        this.style.backgroundColor = "#628ac9";
+        document.getElementById("check-standard-price").innerHTML = "This room costs $" + rooms.single.price
+    });
+  
+    document.getElementById("queen-button").addEventListener("click", function() {
+        this.style.backgroundColor = "#628ac9";
         document.getElementById("check-queen-price").innerHTML = "This room costs $" + rooms.double.price
-    }
+    });
     
-    function checkPriceKing() {
+    document.getElementById("king-button").addEventListener("click", function() {
+        this.style.backgroundColor = "#628ac9";
         document.getElementById("check-king-price").innerHTML = "This room costs $" + rooms.king.price
-    }
+    });
     
-    function checkPriceFamily() {
+    document.getElementById("family-button").addEventListener("click", function() {
+        this.style.backgroundColor = "#628ac9";
         document.getElementById("check-family-price").innerHTML = "This room costs $" + rooms.family.price
-    }
+    });
     
     function reserveStandard() {
         rooms.single.available == false;
@@ -84,3 +88,7 @@ var rooms = {
         rooms.family.available == false;
         document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
     }
+    
+    document.getElementById("standard-button").addEventListener("click", function() {
+        this.style.backgroundColor = "#c9cfd8";
+    });

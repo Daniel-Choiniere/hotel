@@ -42,7 +42,7 @@
             <div class="card-header text-center collapse-title" id="headingOne">
                 <h5 class="mb-0 collapse-header">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Standard Room
+              <bold>Standard Room</bold>
             </button>
                 </h5>
             </div>
@@ -52,7 +52,7 @@
                     You deserve a room as unique as you are while bed type is not guaranteed and subject to availability we will do our best to meet your preference. Maximum occupancy 2 people. Includes bath robes. Yoga mat. Flat screen tv. Plush pillow with luxury linens.
                 </br>
                 </br>
-                <button onclick=checkPriceStandard()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveStandard()>Reserve your room</button>
+                <button id="standard-button" onclick=checkPriceStandard()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveStandard()>Reserve your room</button>
                 <h4 id="check-standard-price"></h4>
                 <h4 id="reserve-standard"></h4>
             </div>
@@ -72,7 +72,7 @@
                     Spacious newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two queen beds. 350 sq. Ft.
                 </br>
                 </br>
-                <button onclick=checkPriceQueen()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveQueen()>Reserve your room</button>
+                <button id="queen-button" onclick=checkPriceQueen()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveQueen()>Reserve your room</button>
                 <h4 id="check-queen-price"></h4>
                 <h4 id="reserve-queen"></h4>
                 </div>
@@ -92,7 +92,7 @@
                     Newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair one king bed. 280 sq. Ft.
                 </br>
                 </br>
-                <button onclick=checkPriceKing()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveKing()>Reserve your room</button>
+                <button id="king-button" onclick=checkPriceKing()>Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveKing()>Reserve your room</button>
                 <h4 id="check-king-price"></h4>
                 <h4 id="reserve-king"></h4>
                 </div>
@@ -112,7 +112,7 @@
                     Newly transformed luxury 2 bedroom suite with separate living area. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two king bed pull out couch 650 sq. 
                 </br>
                 </br>  
-                <button onclick=checkPriceFamily(); >Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveFamily()>Reserve your room</button>
+                <button id="family-button" onclick=checkPriceFamily(); >Check Current Room Rate</button>&nbsp&nbsp<button onclick=reserveFamily()>Reserve your room</button>
                 <h4 id="check-family-price"></h4> 
                 <h4 id="reserve-family"></h4>
                 </div>
@@ -137,8 +137,8 @@
             <div class="card-deck" style="padding-top: 20px">
                 <div class="card p-3 mb-3 bg-dark">
                     <div class="card-block text-left">
-                        <h7 class="card-title card-title-style">Sophistication and Swerve</h7>
-                        <p class="card-text" style="font-size: 14px; color: white">
+                        <h7 class="card-title card-title-style">SOPHISTICATION AND STYLE</h7>
+                        <p class="card-text" style="font-size: 14px; color: white; font-family: courier new">
                             </br>
                             </br>As you scan these snapshots of our Providence boutique hotel, from our seductive lobby living room to our exquisite guestrooms and suites, you’ll see they’re all designed with sophisticated verve and dash to keep it stylish – never stuffy. Then there is our Highball Lounge that radiates Providence personality with its clever cocktail menu and tasty small plates. And we couldn’t give you a true sense of place without showcasing our amazing location, in the heart of downtown, steps from Providence Place Mall.
                         </p>
@@ -151,8 +151,8 @@
 
                 <div class="card p-3 mb-3 bg-dark">
                     <div class="card-block text-left">
-                        <h7 class="card-title card-title-style">A workspace that works for the way you work.</h7>
-                        <p class="card-text" style="font-size: 14px; color: white">
+                        <h7 class="card-title card-title-style">A WORKSPACE THAT WORKS FOR THE WAY OU WORK</h7>
+                        <p class="card-text" style="font-size: 14px; color: white; font-family: courier new">
                             </br>
                           A workspace that works for the way you work. An event space that truly sets the scene. Whether it’s presenting quarterly earnings or giving a memorable toast to a party of 100, our newly transformed 2,400 square feet of private event and work space will provide a refined and inviting backdrop for any meeting or event. Abundant natural light and stellar city views combine with cutting-edge functionality and flexible set-up possibilities to elevate the innovative and personal ways you do business, entertain and celebrate.
                             </br></p>
@@ -173,8 +173,8 @@
             <div class="card-deck"  style="padding-bottom: 50px">
                 <div class="card p-3 mb-3 bg-dark">
                     <div class="card-block text-left">
-                        <h7 class="card-title card-title-style">A Providence boutique hotel with authentic appeal</h7>
-                        <p class="card-text" style="font-size: 14px; color: white">
+                        <h7 class="card-title card-title-style">PROVIDENCE BOTIQUE HOTEL WITH AUTHENTIC APPEAL</h7>
+                        <p class="card-text" style="font-size: 14px; color: white; font-family: courier new">
                             </br>
                             </br>Sense of place is one of the most inspiring aspects of travel. That’s why the Div'inns look, and feel ... intriguing and design-forward – embodies the duality of Providence's identity as a city with a rich history and an exciting future as a premier destination for luxury travelers.</p>
                         </br>
@@ -188,8 +188,8 @@
 
                 <div class="card p-3 mb-3 bg-dark">
                     <div class="card-block text-left">
-                        <h7 class="card-title card-title-style">The Div'inn Reimagines Luxury</h7>
-                        <p class="card-text" style="font-size: 14px; color: white">
+                        <h7 class="card-title card-title-style">THE DIV'INN REIMAGINES LUXURY</h7>
+                        <p class="card-text" style="font-size: 14px; color: white; font-family: courier new">
                             </br>
                             </br>The Div'inn has revealed a bold, dynamic transformation for 2018. Our innovative take on modern luxury, all 190 guest rooms and suites, the living room lobby, and 2,400 square feet of private event and workspace are rejuvenated and reimagined.</p>
                         </br>
