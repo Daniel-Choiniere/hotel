@@ -52,22 +52,25 @@ var rooms = {
         // HANDLERS
         
     document.getElementById("standard-button").addEventListener("click", function() {
-        document.getElementById("reserve-standard").innerHTML = ""
+        document.getElementById("reserve-standard").innerHTML = "";
         this.style.backgroundColor = "#628ac9";
         document.getElementById("check-standard-price").innerHTML = "This room costs $" + rooms.single.price
     });
   
     document.getElementById("queen-button").addEventListener("click", function() {
+        document.getElementById("reserve-queen").innerHTML = "";
         this.style.backgroundColor = "#628ac9";
         document.getElementById("check-queen-price").innerHTML = "This room costs $" + rooms.double.price
     });
     
     document.getElementById("king-button").addEventListener("click", function() {
+        document.getElementById("reserve-king").innerHTML = "";
         this.style.backgroundColor = "#628ac9";
         document.getElementById("check-king-price").innerHTML = "This room costs $" + rooms.king.price
     });
     
     document.getElementById("family-button").addEventListener("click", function() {
+        document.getElementById("reserve-family").innerHTML = "";
         this.style.backgroundColor = "#628ac9";
         document.getElementById("check-family-price").innerHTML = "This room costs $" + rooms.family.price
     });
@@ -75,27 +78,32 @@ var rooms = {
     //  RESERVE ROOM FUNCTIONS
     
     function reserveStandard() {
-        document.getElementById("check-standard-price").innerHTML = ""
-        rooms.single.available === false;
+        document.getElementById("check-standard-price").innerHTML = "";
+        rooms.single.available == false;
         document.getElementById("reserve-standard").innerHTML = "Thank you for reserving the Standard Room!"
     }
     
     function reserveQueen() {
-        if (rooms.queen.available === false) {
-            
-        }
-        document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
+        document.getElementById("check-queen-price").innerHTML = "";
         rooms.double.available == false;
+        document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
     }
     
     function reserveKing() {
-        rooms.king.available === false;
+        document.getElementById("check-king-price").innerHTML = "";
+        rooms.king.available == false;
         document.getElementById("reserve-king").innerHTML = "Thank you for reserving the King Deluxe Room!"
     }
     
     function reserveFamily() {
-        rooms.family.available === false;
+        document.getElementById("check-family-price").innerHTML = "";
+        rooms.family.available == false;
         document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
+    }
+    
+    function viewAmenities() {
+        document.getElementById("show-amenities").innerHTML = "Hello there " + Object.getOwnPropertyNames(rooms);
+        
     }
     
     
