@@ -52,16 +52,22 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body card-body-text" >
                     <img style="float: left; padding-left: 20px; padding-right: 20px" src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Standard Room" height="200" width="250">
-                    You deserve a room as unique as you are while bed type is not guaranteed and subject to availability we will do our best to meet your preference. Maximum occupancy 2 people. Includes bath robes. Yoga mat. Flat screen tv. Plush pillow with luxury linens.
+                    You deserve a room as unique as you are! Each of our single rooms are special in there own way!
                 </br>
-                </br>
-                <button id="standard-button" onclick=checkPriceStandard()>Check Current Room Rate</button>&nbsp&nbsp
-                <button onclick=reserveStandard()>Reserve your room</button>&nbsp&nbsp
-                <button onclick=viewAmenities()>View all Room Amenities</button>
+                <button  class="dropbtn" id="standard-button" onclick=checkPriceStandard()>Check Current Room Rate</button>&nbsp&nbsp
+                <button class="dropbtn"onclick=reserveStandard()>Reserve your room</button>&nbsp&nbsp
+                <div class="dropdown">
+                    <button class="dropbtn">Ammenities</button>
+                    <div class="dropdown-content">
+                        <a onclick=viewAmenitiesSqftSingle() id="show-amenities-single-first">Square Footage</a>
+                        <a onclick=viewAmenitiesBedsSingle() id="show-amenities-single-second">Beds</a>
+                        <a onclick=viewAmenitiesTvSingle() id="show-amenities-single-third">Television Size</a>
+                    </div>
+                </div>
                 
                 <h4 id="check-standard-price"></h4>
                 <h4 id="reserve-standard"></h4>
-                <h4 id="show-amenities"></h4>
+                <h4 id="show-amenities-single"></h4>
             </div>
             </div>
         </div>
@@ -76,16 +82,23 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body card-body-text">
                     <img style="float: left; padding-left: 20px; padding-right: 20px" src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Queen Room" height="200" width="250">
-                    Spacious newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two queen beds. 350 sq. Ft.
+                    Spacious Queen room, all new furniture!
                 </br>
                 </br>
                 <button id="queen-button" onclick=checkPriceQueen()>Check Current Room Rate</button>&nbsp&nbsp
                 <button onclick=reserveQueen()>Reserve your room</button>&nbsp&nbsp
-                <button onclick=viewAmenities()>View all Room Amenities</button>
+                <div class="dropdown">
+                    <button class="dropbtn">Ammenities</button>
+                    <div class="dropdown-content">
+                        <a onclick=viewAmenitiesSqftQueen()>Square Footage</a>
+                        <a onclick=viewAmenitiesBedsQueen()>Beds</a>
+                        <a onclick=viewAmenitiesTvQueen()>Television Size</a>
+                    </div>
+                </div>
                 
                 <h4 id="check-queen-price"></h4>
                 <h4 id="reserve-queen"></h4>
-                <h4 id="show-amenities"></h4>
+                <h4 id="show-amenities-queen"></h4>
                 </div>
             </div>
         </div>
@@ -100,16 +113,24 @@
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body card-body-text">
                     <img style="float: left; padding-left: 20px; padding-right: 20px" src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&h=350" alt="King Room" height="200" width="250">
-                    Newly transformed luxurious room. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair one king bed. 280 sq. Ft.
+                    Newly transformed luxurious King room!
                 </br>
                 </br>
                 <button id="king-button" onclick=checkPriceKing()>Check Current Room Rate</button>&nbsp&nbsp
                 <button onclick=reserveKing()>Reserve your room</button>&nbsp&nbsp
+                <div class="dropdown">
+                    <button class="dropbtn">Ammenities</button>
+                    <div class="dropdown-content">
+                        <a onclick=viewAmenitiesSqftQueen()>Square Footage</a>
+                        <a onclick=viewAmenitiesBedsQueen()>Beds</a>
+                        <a onclick=viewAmenitiesTvQueen()>Television Size</a>
+                    </div>
+                </div>
                 <button onclick=viewAmenities()>View all Room Amenities</button>
                 
                 <h4 id="check-king-price"></h4>
                 <h4 id="reserve-king"></h4>
-                <h4 id="show-amenities"></h4>
+                <h4 id="show-amenities-king"></h4>
                 </div>
             </div>
         </div>
@@ -124,16 +145,24 @@
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                 <div class="card-body card-body-text">
                     <img style="float: left; padding-left: 20px; padding-right: 20px" src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Family Suite" height="200" width="250">
-                    Newly transformed luxury 2 bedroom suite with separate living area. Inclusive of european continental breakfast wifi 24 hour fitness center iconic eames chair two king bed pull out couch 650 sq. 
+                    Freshly remodeled luxury 2 bedroom suite with separate living area. 
                 </br>
                 </br>  
                 <button id="family-button" onclick=checkPriceFamily(); >Check Current Room Rate</button>&nbsp&nbsp
                 <button onclick=reserveFamily()>Reserve your room</button>&nbsp&nbsp
+                <div class="dropdown">
+                    <button class="dropbtn">Ammenities</button>
+                    <div class="dropdown-content">
+                        <a onclick=viewAmenitiesSqftQueen()>Square Footage</a>
+                        <a onclick=viewAmenitiesBedsQueen()>Beds</a>
+                        <a onclick=viewAmenitiesTvQueen()>Television Size</a>
+                    </div>
+                </div>
                 <button onclick=viewAmenities()>View all Room Amenities</button>
                 
                 <h4 id="check-family-price"></h4> 
                 <h4 id="reserve-family"></h4>
-                <h4 id="show-amenities"></h4>
+                <h4 id="show-amenities-family"></h4>
                 
                 </div>
             </div>

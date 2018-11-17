@@ -3,7 +3,7 @@ var rooms = {
             available: true,
             beds: 1,
             sqft: 500, 
-            televisionSize: 32, 
+            televisionSize: '32"', 
             sleeps: 2,
             price: 100,
         },
@@ -11,7 +11,7 @@ var rooms = {
             available: true,
             beds: 2,
             sqft: 500,
-            televisionSize: 32,
+            televisionSize: '32"',
             sleeps: 4,
             price: 120,
         },
@@ -19,7 +19,7 @@ var rooms = {
             available: true,
             beds: 2,
             sqft: 750,
-            televisionSize: 50,
+            televisionSize: '50"',
             sleeps: 4,
             price: 200,
         },
@@ -27,7 +27,7 @@ var rooms = {
             available: true,
             beds: 3,
             sqft: 1100,
-            televisionSize: 50,
+            televisionSize: '50"',
             sleeps: 8,
             price: 300,
         },
@@ -101,9 +101,26 @@ var rooms = {
         document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
     }
     
-    function viewAmenities() {
-        document.getElementById("show-amenities").innerHTML = "Hello there " + Object.getOwnPropertyNames(rooms);
-        
+    function viewAmenitiesSqftSingle() {
+        document.getElementById("show-amenities-single-first").innerHTML = Object.keys(rooms.single)[2] + " " + Object.values(rooms.single)[2];
     }
     
+    function viewAmenitiesBedsSingle() {
+        document.getElementById("show-amenities-single-second").innerHTML = Object.keys(rooms.single)[1] + " " + Object.values(rooms.single)[1];
+    }
     
+    function viewAmenitiesTvSingle() {
+        document.getElementById("show-amenities-single-third").innerHTML = Object.keys(rooms.single)[3] + " " + Object.values(rooms.single)[3];
+    }
+    
+     function viewAmenitiesSqftQueen() {
+        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[2] + " " + Object.values(rooms.double)[2];
+    }
+    
+    function viewAmenitiesBedsQueen() {
+        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[1] = " " + Object.values(rooms.double)[1];
+    }
+    
+    function viewAmenitiesTvQueen() {
+        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[3] + " " +  Object.values(rooms.double)[3];
+    }
