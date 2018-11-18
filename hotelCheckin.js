@@ -41,11 +41,11 @@ var rooms = {
         let message = document.getElementById("inputInfo").elements.item(2).value;
         let nameCapital = name[0].toUpperCase() + name.slice(1);
     
-        if (nameCapital.length < 2) {
-            alert("Please enter a valid name.")
+        if (name.length >= 2) {
+            alert("Thank you " + nameCapital + " for reaching out, we will get back to you shortly!");
         }
         else {
-            alert("Thank you " + nameCapital + " for reaching out, we will get back to you shortly!")
+            alert("Please enter a valid name.");
         }
     }
     
@@ -114,13 +114,13 @@ var rooms = {
     }
     
      function viewAmenitiesSqftQueen() {
-        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[2] + " " + Object.values(rooms.double)[2];
+        document.getElementById("show-amenities-queen-first").innerHTML = Object.keys(rooms.double)[2] + " " + Object.values(rooms.double)[2];
     }
     
     function viewAmenitiesBedsQueen() {
-        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[1] = " " + Object.values(rooms.double)[1];
+        document.getElementById("show-amenities-queen-second").innerHTML = Object.keys(rooms.double)[1] + " " + Object.values(rooms.double)[1];
     }
     
     function viewAmenitiesTvQueen() {
-        document.getElementById("show-amenities-queen").innerHTML = Object.entries(rooms.double)[3] + " " +  Object.values(rooms.double)[3];
+        document.getElementById("show-amenities-queen-third").innerHTML = Object.keys(rooms.double)[3] + " " +  Object.values(rooms.double)[3];
     }
