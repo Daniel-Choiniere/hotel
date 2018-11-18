@@ -53,7 +53,7 @@ var rooms = {
         }
     }
     
-        // HANDLERS
+        // ROOM PRICE HANDLERS
         
     document.getElementById("standard-button").addEventListener("click", function() {
         document.getElementById("reserve-standard").innerHTML = "";
@@ -79,7 +79,7 @@ var rooms = {
         document.getElementById("check-family-price").innerHTML = "This room costs $" + rooms.family.price
     });
     
-    //  RESERVE ROOM FUNCTIONS
+        //  RESERVE ROOM METHODS
     
     function reserveStandard() {
         document.getElementById("check-standard-price").innerHTML = "";
@@ -108,6 +108,8 @@ var rooms = {
         document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
         alert("YOU HAVE RESERVED THE FAMILY SUITE. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
     }
+        
+        // VIEW AMENITIES METHODS
     
     function viewAmenitiesSqftSingle() {
         document.getElementById("show-amenities-single-first").innerHTML = Object.keys(rooms.single)[2] + " " + Object.values(rooms.single)[2];
@@ -130,5 +132,33 @@ var rooms = {
     }
     
     function viewAmenitiesTvQueen() {
-        document.getElementById("show-amenities-queen-third").innerHTML = Object.keys(rooms.double)[3] + " " +  Object.values(rooms.double)[3];
+        document.getElementById("show-amenities-queen-third").innerHTML = Object.keys(rooms.double)[3] + " " + Object.values(rooms.king)[3];
     }
+    
+         function viewAmenitiesSqftKing() {
+        document.getElementById("show-amenities-king-first").innerHTML = Object.keys(rooms.king)[2] + " " + Object.values(rooms.king)[2];
+    }
+    
+    function viewAmenitiesBedsKing() {
+        document.getElementById("show-amenities-king-second").innerHTML = Object.keys(rooms.king)[1] + " " + Object.values(rooms.king)[1];
+    }
+    
+    function viewAmenitiesTvKing() {
+        document.getElementById("show-amenities-king-third").innerHTML = Object.keys(rooms.king)[3] + " " +  Object.values(rooms.king)[3];
+    }
+        
+         function viewAmenitiesSqftFamily() {
+        document.getElementById("show-amenities-family-first").innerHTML = Object.keys(rooms.family)[2] + " " + Object.values(rooms.family)[2];
+    }
+    
+    function viewAmenitiesBedsFamily() {
+        document.getElementById("show-amenities-family-second").innerHTML = Object.keys(rooms.family)[1] + " " + Object.values(rooms.family)[1];
+    }
+    
+    function viewAmenitiesTvFamily() {
+        document.getElementById("show-amenities-family-third").innerHTML = Object.keys(rooms.family)[3] + " " +  Object.values(rooms.family)[3];
+    }
+    
+        // HANDELS CUSTOMER CHECKOUT
+        
+    
