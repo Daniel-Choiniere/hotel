@@ -1,9 +1,7 @@
- .collapse-background {
-     background: url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+
+body {
+     background: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&h=350); 
+     background-size: cover;
 }
 
 .navbar-text {
@@ -29,6 +27,13 @@
     padding-bottom: 20px;
 }
 
+.room-choice-title {
+    font-family: Source Sans Pro, sans-serif; 
+    font-weight: bolder;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #3894ac;
+}
 
 .card-title-style {
     color: #3894ac;
@@ -46,7 +51,9 @@
 
 .room-title {
     font-family: impact;
-    color: black
+    font-size: 20px;
+    color: #e56f00;
+    letter-spacing: 3px;
 }
 
 /*body {*/
@@ -90,21 +97,25 @@ form-control {
     height: 100px;
 }
 
-#sqft-single {
+#checkout {
+    background-color: Transparent;
+    border: none;
     color: #3894ac;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Source Sans Pro, sans-serif;
     text-align: center;
-    width:400px;
+    width:700px;
     height:100px;
+    letter-spacing: 3px;
+    font-weight: bolder;
 }
 
-#sqft-single:hover span {
+#checkout:hover span {
     display:none
 }
 
-#sqft-single:hover:after {
-    color:red;
+#checkout:hover:after {
+    color: #e56f00;
     content:"MODERN LUXURY AWAITS YOU!"
 }
 
