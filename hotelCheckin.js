@@ -41,8 +41,8 @@ var rooms = {
         let message = document.getElementById("inputInfo").elements.item(2).value;
         let nameCapital = name[0].toUpperCase() + name.slice(1);
     
-        if (name.length >= 2) {
-            alert("Thank you " + nameCapital + " for reaching out, we will get back to you shortly!");
+        if (nameCapital.length >= 2) {
+            alert("Thank you " + nameCapital + " for reaching out, we will get back to you shortly @ " + email);
         }
         else {
             alert("Please enter a valid name.");
