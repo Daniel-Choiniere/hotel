@@ -47,6 +47,10 @@ var rooms = {
         else {
             alert("Please enter a valid name.");
         }
+        
+        if (email.length < 5) {
+            alert("Please enter a valid e-mail")
+        }
     }
     
         // HANDLERS
