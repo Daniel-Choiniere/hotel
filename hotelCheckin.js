@@ -81,33 +81,72 @@ var rooms = {
     
         //  RESERVE ROOM METHODS
     
+    // function reserveStandard() {
+    //     document.getElementById("check-standard-price").innerHTML = "";
+    //     rooms.single.available == false;
+    //     document.getElementById("reserve-standard").innerHTML = "Thank you for reserving the Standard Room!"
+    //     alert("YOU HAVE RESERVED THE STANDARD ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+    // }
+    
+    // function reserveQueen() {
+    //     document.getElementById("check-queen-price").innerHTML = "";
+    //     rooms.double.available == false;
+    //     document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
+    //     alert("YOU HAVE RESERVED THE QUEEN ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+    // }
+    
+    // function reserveKing() {
+    //     document.getElementById("check-king-price").innerHTML = "";
+    //     rooms.king.available == false;
+    //     document.getElementById("reserve-king").innerHTML = "Thank you for reserving the King Deluxe Room!"
+    //     alert("YOU HAVE RESERVED THE KING ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+    // }
+    
+    
     function reserveStandard() {
         document.getElementById("check-standard-price").innerHTML = "";
-        rooms.single.available == false;
-        document.getElementById("reserve-standard").innerHTML = "Thank you for reserving the Standard Room!"
-        alert("YOU HAVE RESERVED THE STANDARD ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        if (rooms.single.available === false) {
+            alert("I'm sorry that room is already booked. Please choose from one of our other wonderfull rooms.")
+        } else if (rooms.single.available === true) {
+            rooms.single.available = false;
+            document.getElementById("reserve-standard").innerHTML = "Thank you for reserving the Standard Room!"
+            alert("YOU HAVE RESERVED THE STANDARD ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        }
     }
     
     function reserveQueen() {
         document.getElementById("check-queen-price").innerHTML = "";
-        rooms.double.available == false;
-        document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
-        alert("YOU HAVE RESERVED THE QUEEN ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        if (rooms.double.available === false) {
+            alert("I'm sorry that room is already booked. Please choose from one of our other wonderfull rooms.")
+        } else if (rooms.double.available === true) {
+            rooms.double.available = false;
+            document.getElementById("reserve-queen").innerHTML = "Thank you for reserving the Queen Premier Room!"
+            alert("YOU HAVE RESERVED THE QUEEN PREMIER ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        }
     }
     
     function reserveKing() {
         document.getElementById("check-king-price").innerHTML = "";
-        rooms.king.available == false;
-        document.getElementById("reserve-king").innerHTML = "Thank you for reserving the King Deluxe Room!"
-        alert("YOU HAVE RESERVED THE KING ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        if (rooms.king.available === false) {
+            alert("I'm sorry that room is already booked. Please choose from one of our other wonderfull rooms.")
+        } else if (rooms.king.available === true) {
+            rooms.king.available = false;
+            document.getElementById("reserve-king").innerHTML = "Thank you for reserving the King Deluxe Room!"
+            alert("YOU HAVE RESERVED THE KING DELUXE ROOM. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        }
     }
     
     function reserveFamily() {
         document.getElementById("check-family-price").innerHTML = "";
-        rooms.family.available == false;
-        document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
-        alert("YOU HAVE RESERVED THE FAMILY SUITE. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        if (rooms.family.available === false) {
+            alert("I'm sorry that room is already booked. Please choose from one of our other wonderfull rooms.")
+        } else if (rooms.family.available === true) {
+            rooms.family.available = false;
+            document.getElementById("reserve-family").innerHTML = "Thank you for reserving the Family Suite!"
+            alert("YOU HAVE RESERVED THE FAMILY SUITE. PROCEED TO CHECKOUT WHEN YOU ARE READY.")
+        }
     }
+     
         
         // VIEW AMENITIES METHODS
     

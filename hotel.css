@@ -60,7 +60,7 @@ form-control {
     height: 100px;
 }
 
-#checkout {
+.checkout {
     background-color: Transparent;
     border: none;
     color: #3894ac;
@@ -73,11 +73,11 @@ form-control {
     font-weight: bolder;
 }
 
-#checkout:hover span {
+.checkout:hover span {
     display:none
 }
 
-#checkout:hover:after {
+.checkout:hover:after {
     color: #e56f00;
     content:"MODERN LUXURY AWAITS YOU!"
 }
